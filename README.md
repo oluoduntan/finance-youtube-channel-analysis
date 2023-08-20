@@ -7,11 +7,10 @@ The ETL process is executed on a weekly basis. It first retrieves the latest dat
 
 The data in the Google Sheet is then visualized using Tableau. Tableau is a data visualization software that allows users to create interactive dashboards and charts. I created a dashboard that displays the following metrics for each channel:
 
--   Number of views
--   Number of likes
--   Number of comments
--   Average view duration
--   Top 10 videos
+-   Number of videos published by each channel
+-   Average number of views per video per quarter 
+-   Average number of likes per video per quarter
+-   Average number of comments per video per quarter
 
 The dashboard allows me to track the performance of each channel over time. I can also use the dashboard to identify trends and patterns in the data.
 
@@ -27,3 +26,6 @@ The ETL process and the Tableau dashboard have been helpful in tracking the perf
 - Amazon Web Service (AWS)
 	- Lambda
 	- EventBridge
+
+## Dashboard
+[Tableau Link](https://public.tableau.com/app/profile/oluwadamilola.oduntan/viz/FinanceYoutubeChannelAnalyticsDashboard/YoutubeAnalyticsDashboard)
