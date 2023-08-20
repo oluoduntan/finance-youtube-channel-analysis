@@ -1,39 +1,29 @@
-# Heart_Failure_Project
-Cardiovascular diseases (CVDs) are the number one cause of death globally, taking an estimated 17.9 million lives each year, which accounts for 31% of all deaths worlwide. Heart failure is a common event caused by CVDs and this dataset contains 12 features that can be used to predict mortality by heart failure. Most cardiovascular diseases can be prevented by addressing behavioural risk factors such as tobacco use, unhealthy diet and obesity, physical inactivity and harmful use of alcohol using population-wide strategies. People with cardiovascular disease or who are at high cardiovascular risk (due to the presence of one or more risk factors such as hypertension, diabetes, hyperlipidaemia or already established disease) need early detection and management wherein a machine learning model can be of great help.
-
-## Tasks:
-1. What age range is more susceptibe to heart failure?
-2. Predict heart failure using the best machine learning algorithm.
-3. Deploy the machine learning model using Flask.
-
-
-# Youtube
+# Finance Youtube Channel Analysis: Data Engineering Project
 
 ## Introduction 
-In this project, you will execute an End-To-End Data Engineering Project on Real-Time Stock Market Data using Kafka.
+In this project, I developed a batch ETL process to collect weekly data for five of my favorite YouTube channels: MeetKevin, Graham Stephan, Andrei Jikh, Tom Nash, and Financial Education. The ETL process collects data from the YouTube API, transforms the data, and stores it in a Google Sheet. The data is then visualized using Tableau.
 
-We are going to use different technologies such as Python, Amazon Web Services (AWS), Apache Kafka, Glue, Athena, and SQL.
+The ETL process is executed on a weekly basis. It first retrieves the latest data for each channel from the YouTube API. The data includes the number of views, likes, and comments for each video. The data is then transformed to remove any duplicate or invalid data. The transformed data is then stored in a Google Sheet.
+
+The data in the Google Sheet is then visualized using Tableau. Tableau is a data visualization software that allows users to create interactive dashboards and charts. I created a dashboard that displays the following metrics for each channel:
+
+-   Number of views
+-   Number of likes
+-   Number of comments
+-   Average view duration
+-   Top 10 videos
+
+The dashboard allows me to track the performance of each channel over time. I can also use the dashboard to identify trends and patterns in the data.
+
+The ETL process and the Tableau dashboard have been helpful in tracking the performance of my favorite YouTube channels. The data has also been helpful in identifying trends and patterns in the YouTube ecosystem.
 
 ## Architecture 
 <img src="Architecture.jpeg">
 
 ## Technology Used
 - Programming Language - Python
+- Data Storage - Google Sheets
+- Data Visualization - Tableau
 - Amazon Web Service (AWS)
-1. S3 (Simple Storage Service)
-2. Athena
-3. Glue Crawler
-4. Glue Catalog
-5. EC2
-- Apache Kafka
-
-
-## Dataset Used
-You can use any dataset, we are mainly interested in operation side of Data Engineering (building data pipeline) 
-
-Here is the dataset used in the video - https://github.com/darshilparmar/stock-market-kafka-data-engineering-project/blob/main/indexProcessed.csv
-
-
-## Complete Video Tutorial 
-
-Video Link - https://www.youtube.com/embed/KerNf0NANMo
+	- Lambda
+	- EventBridge
